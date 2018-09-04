@@ -70,7 +70,7 @@ body {
 
 .accordion-container {
   /*margin: 0 250px 10px;*/
-  max-width:60vw;
+  max-width:80vw;
   margin:auto;
 }
 .accordion-toggle {
