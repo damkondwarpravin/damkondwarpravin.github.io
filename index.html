@@ -1,138 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-<script src="master.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="master.js"></script>
 
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
-<script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script>
     $(document).ready(function(){
         showDiv("");
     });
-</script>
+    </script>
 </head>
 <body>
 
-<div class="mynav" id="myTopnav">
-  <a id="home" onclick="showDiv(this)">Home</a>
-  <a id="Accordian" onclick="showDiv(this)">Accordian</a>
-  <a id="Modal" onclick="showDiv(this)">Modal</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<div style="padding-left:16px" id="HomeDiv">
-    <br />
-    <br />
-  <p>
-      <h3>Problem Statement</h3><br /><br />
-      As a solution to this assignment, you are supposed to create the replica of following Bootstrap components using ​Css(flexbox for layout) and Jquery only​.​You are not allowed to use bootstrap files.
-      <br /><br />
-      ​Here is the list of components that you are supposed to create - 
-      <br /><br />1.Collapse component - accordion format
-      <br /><br />2.Navbar component
-      <br /><br />3.Modal component
-      
-      <br /><br />In your submission, you should create separate HTML, CSS and JS files for each of the components. You may create the most basic version of these components.​The components must be fully responsive.​You are supposed to use flexboxes for responsiveness. So, when your HTML file is opened, it would contain one the components, For example - The Navbar and it should show the behaviour exactly same as Original Bootstrap navbar. But your code must not use bootstrap to create it. You are supposed to write it from Scratch.
-      <br /><br />
-      Here are some important points -
-      <br /><br />1)You are free to change the colors, font, icon etc. Extra points will be given for creativity.
-      <br /><br />2)You must not use Bootstrap files to create them and you must not copy it from somewhere.
-      <br /><br />3)Your components must be fully responsive.
-  </p>
-</div>
-
-<div id="AccordDiv">
-    <br />
-    <br />
-  <div class="accordion-container">
-    <a href="#" style="text-align: center;" class="accordion-toggle">JavaScript</a>
-    <div class="accordion-content">
-       <p> 
-         JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
-         Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and thus is an essential part of web applications. The vast majority of websites use it,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
-         As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.
-         Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets.
-       </p>
+    <div class="mynav" id="myTopnav">
+        <a id="home" onclick="showDiv(this)">Home</a>
+        <a id="Accordian" onclick="showDiv(this)">Accordian</a>
+        <a id="Modal" onclick="showDiv(this)">Modal</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-  </div><br />
-  <div class="accordion-container">
-    <a href="#" style="text-align: center;" class="accordion-toggle">jQuery</a>
-    <div class="accordion-content">
-      <p>
-        jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.[3] It is free, open-source software using the permissive MIT License.[2] Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.[4][5]
-        jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
-        The set of jQuery core features—DOM element selections, traversal and manipulation—enabled by its selector engine (named "Sizzle" from v1.3), created a new "programming style", fusing algorithms and DOM data structures. This style influenced the architecture of other JavaScript frameworks like YUI v3 and Dojo, later stimulating the creation of the standard Selectors API.[6]
-        Microsoft and Nokia bundle jQuery on their platforms.[7] Microsoft includes it with Visual Studio[8] for use within Microsoft's ASP.NET AJAX and ASP.NET MVC frameworks while Nokia has integrated it into the Web Run-Time widget development platform.[9]
-      </P>
-    </div>
-  </div><br />
-  <div class="accordion-container">
-    <a href="#" style="text-align: center;" class="accordion-toggle">AngularJs</a>
-    <div class="accordion-content">
-      AngularJS (also written as Angular.js) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. The JavaScript components complement Apache Cordova, a framework used for developing cross-platform mobile apps. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. (This flexibility has led to the acronym MVW, which stands for "model-view-whatever" and may also encompass model–view–presenter and model–view–adapter.) In 2014, the original AngularJS team began working on the Angular application platform.
-      The AngularJS framework works by first reading the HTML page, which has additional custom tag attributes embedded into it. Angular interprets those attributes as directives to bind input or output parts of the page to a model that is represented by standard JavaScript variables. The values of those JavaScript variables can be manually set within the code, or retrieved from static or dynamic JSON resources.
-    </div>
-  </div><br />
-</div>
 
-<div id="ModalDiv">
-    <br />
-    <br />
-  <button id="myBtn">Modal Type 1</button>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-    <div class="modal-header">
-    <span class="close">&times;</span>
-    <h2>Modal Header</h2>
+    <div style="padding-left:16px" id="HomeDiv">
+        <br />
+        <br />
+        <p>
+            <h3>Problem Statement</h3><br /><br />
+            As a solution to this assignment, you are supposed to create the replica of following Bootstrap components using ​Css(flexbox for layout) and Jquery only​.​You are not allowed to use bootstrap files.
+            <br /><br />
+            ​Here is the list of components that you are supposed to create -
+            <br /><br />1.Collapse component - accordion format
+            <br /><br />2.Navbar component
+            <br /><br />3.Modal component
+
+            <br /><br />In your submission, you should create separate HTML, CSS and JS files for each of the components. You may create the most basic version of these components.​The components must be fully responsive.​You are supposed to use flexboxes for responsiveness. So, when your HTML file is opened, it would contain one the components, For example - The Navbar and it should show the behaviour exactly same as Original Bootstrap navbar. But your code must not use bootstrap to create it. You are supposed to write it from Scratch.
+            <br /><br />
+            Here are some important points -
+            <br /><br />1)You are free to change the colors, font, icon etc. Extra points will be given for creativity.
+            <br /><br />2)You must not use Bootstrap files to create them and you must not copy it from somewhere.
+            <br /><br />3)Your components must be fully responsive.
+        </p>
     </div>
-    <div class="modal-body">
-    <p>This is modal body This is modal body This is modal body This is modal body </p>
-    <p>Some other text...This is modal body This is modal body This is modal body </p>
+
+    <div id="AccordDiv">
+        <br />
+        <br />
+        <div class="accordion-container">
+            <a href="#" style="text-align: center;" class="accordion-toggle">JavaScript</a>
+            <div class="accordion-content">
+                <p>
+                    JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
+                    Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and thus is an essential part of web applications. The vast majority of websites use it,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
+                    As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.
+                    Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets.
+                </p>
+            </div>
+        </div><br />
+        <div class="accordion-container">
+            <a href="#" style="text-align: center;" class="accordion-toggle">jQuery</a>
+            <div class="accordion-content">
+                <p>
+                    jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.[3] It is free, open-source software using the permissive MIT License.[2] Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.[4][5]
+                    jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
+                    The set of jQuery core features—DOM element selections, traversal and manipulation—enabled by its selector engine (named "Sizzle" from v1.3), created a new "programming style", fusing algorithms and DOM data structures. This style influenced the architecture of other JavaScript frameworks like YUI v3 and Dojo, later stimulating the creation of the standard Selectors API.[6]
+                    Microsoft and Nokia bundle jQuery on their platforms.[7] Microsoft includes it with Visual Studio[8] for use within Microsoft's ASP.NET AJAX and ASP.NET MVC frameworks while Nokia has integrated it into the Web Run-Time widget development platform.[9]
+                </p>
+            </div>
+        </div><br />
+        <div class="accordion-container">
+            <a href="#" style="text-align: center;" class="accordion-toggle">AngularJs</a>
+            <div class="accordion-content">
+                AngularJS (also written as Angular.js) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. The JavaScript components complement Apache Cordova, a framework used for developing cross-platform mobile apps. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. (This flexibility has led to the acronym MVW, which stands for "model-view-whatever" and may also encompass model–view–presenter and model–view–adapter.) In 2014, the original AngularJS team began working on the Angular application platform.
+                The AngularJS framework works by first reading the HTML page, which has additional custom tag attributes embedded into it. Angular interprets those attributes as directives to bind input or output parts of the page to a model that is represented by standard JavaScript variables. The values of those JavaScript variables can be manually set within the code, or retrieved from static or dynamic JSON resources.
+            </div>
+        </div><br />
     </div>
-    <div class="modal-footer">
-    <h3>Modal Footer</h3>
+
+    <div id="ModalDiv">
+        <br />
+        <br />
+        <button id="myBtn" class="AnchorTobutton">Modal Type 1</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>This is modal body This is modal body This is modal body This is modal body </p>
+                    <p>Some other text...This is modal body This is modal body This is modal body </p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <a href="#openModal" class="AnchorTobutton">Modal Type 2</a>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Modal Type 2</h2><br />
+                <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+                <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            </div>
+        </div>
     </div>
-    </div>
-  </div> 
-</div>
 
-<script>
-  var modal = document.getElementById('myModal');
-  var btn = document.getElementById("myBtn");
-  var span = document.getElementsByClassName("close")[0];
+  <script>
+          var modal = document.getElementById('myModal');
+          var btn = document.getElementById("myBtn");
+          var span = document.getElementsByClassName("close")[0];
 
-  document.getElementById("myBtn").onclick = function() {
-    modal.style.display = "block";
-  }
+          document.getElementById("myBtn").onclick = function() {
+            modal.style.display = "block";
+          }
 
-  document.getElementsByClassName("close")[0].onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  window.onclick = function(event) 
-  {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+          document.getElementsByClassName("close")[0].onclick = function() {
+            modal.style.display = "none";
+          }
 
-  $(document).ready(function () {
-    $('.accordion-toggle').on('click', function (event) {
-        event.preventDefault();
-        var accordion = $(this);
-        var accordionContent = accordion.next('.accordion-content');
-        accordion.toggleClass("open");
-        accordionContent.slideToggle(250);
-    });
-});
+          window.onclick = function (event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
 
-</script>
+          $(document).ready(function () {
+              $('.accordion-toggle').on('click', function (event) {
+                  event.preventDefault();
+                  var accordion = $(this);
+                  var accordionContent = accordion.next('.accordion-content');
+                  accordion.toggleClass("open");
+                  accordionContent.slideToggle(250);
+              });
+          });
+  </script>
 
 </body>
 </html>
