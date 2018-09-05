@@ -26,7 +26,7 @@ $(document).ready(function () {
     //Get Movie by ID 
     $("#btnByID").click(function () {
         let id = $("#idtxt").val();
-        let url = "http://www.omdbapi.com/?i="+id+"&apikey=19a8a7c2";
+        let url = "https://www.omdbapi.com/?i="+id+"&apikey=19a8a7c2";
         $.ajax({
             url: url,
             datatype: 'JSON',
