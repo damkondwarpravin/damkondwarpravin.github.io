@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript" src="master.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                showPanel();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel-group">
+                <div class="panel panel-info">
+                    <div class="panel-heading" style="text-align: center"><h4><b>Assignment Name - Jquery Ajax</b></h4></div>
+                        <div class="panel-body">
+                            <div class="dropdown">Search Movie By : 
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select 
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" style="margin: 2px 140px 0 !important;">
+                                    <li><a onclick="showPanel(1)">Imdb ID</a></li>
+                                    <li><a onclick="showPanel(2)">Title and Year</a></li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="w3-container">
+                                    <div class="w3-panel w3-pale-green w3-serif" id="divByIDByTitle">
+                                      <div id="byIdDiv">
+                                            <b>By Imdb ID</b><br /><br />
+                                            <div style="overflow-x:auto;">
+                                                <table>
+                                                    <tr>
+                                                        <td>ID : <input type="text" id="idtxt" name="idtxt"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><br /><button id="btnByID" type="button" class="btn btn-primary">Search</button>&nbsp;&nbsp;
+                                                        <button type="button" class="btn btn-primary">Reset</button></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                      </div>
+
+                                      <div id="byTitleDiv">
+                                            <b>By Title</b><br /><br />
+                                            <div style="overflow-x:auto;">
+                                                <table>
+                                                    <tr>
+                                                        <td>Title : <input type="text" id="titletxt" name="titletxt"><br /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><br /> Year : <input type="text" id="yeartxt" name="yeartxt"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><br />
+                                                            <button id="btnByTitle" type="button" class="btn btn-primary">Search</button>&nbsp;&nbsp;
+                                                            <button type="button" class="btn btn-primary">Reset</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                      </div>
+                                    </div>
+                                    <div id="divResult">
+
+                                    </div>
+                            </div>
+                       </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
