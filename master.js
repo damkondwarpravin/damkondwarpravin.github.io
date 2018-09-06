@@ -26,14 +26,15 @@ $(document).ready(function () {
     //Get Movie by ID 
     $("#btnByID").click(function () {
         let id = $("#idtxt").val();
-        let url = "https://www.omdbapi.com/?i="+id+"&apikey=19a8a7c2";
+        let url = "https://www.omdbapi.com/?i=" + id + "&apikey=19a8a7c2";
+
         $.ajax({
             url: url,
             datatype: 'JSON',
             success: function (result) {
                 var htmlNewString = "";
                 $.each(result, function (key, value) {
-                    if(key == "Poster"){
+                    if (key == "Poster") {
                         htmlNewString += "</br><span id='" + key + "' name='" + key + "'><b>" + key + ": </b></span>"
                         +"<img src='"+value+"' class='img-fluid' alt='Responsive image'/>";
                     }
@@ -47,7 +48,7 @@ $(document).ready(function () {
                 $("#divResult").html(htmlNewString);
             },
             error: function (xhr) {
-                $("#divResult").html(xhr["Response"] + "----------- " + xhr["Error"]);
+                $("#divResult").html(xhr["Response"] + ": " + xhr["Error"]);
             }
         });
     });
@@ -56,14 +57,15 @@ $(document).ready(function () {
     $("#btnByTitle").click(function () {
         let title = $("#titletxt").val();
         let year = $("#yeartxt").val();
-        let url = "http://www.omdbapi.com/?t=" + title + "&y=" + year + "&apikey=19a8a7c2";
+        let url = "https://www.omdbapi.com/?t=" + title + "&y=" + year + "&apikey=19a8a7c2";
+
         $.ajax({
             url: url,
             datatype: 'JSON',
             success: function (result) {
                 var htmlNewString = "";
                 $.each(result, function (key, value) {
-                    if(key == "Poster"){
+                    if (key == "Poster") {
                         htmlNewString += "</br><span id='" + key + "' name='" + key + "'><b>" + key + ": </b></span>"
                         +"<img src='"+value+"' class='img-fluid' alt='Responsive image'/>";
                     }
@@ -77,9 +79,8 @@ $(document).ready(function () {
                 $("#divResult").html(htmlNewString);
             },
             error: function (xhr) {
-                $("#divResult").html(xhr["Response"] + "----------- " + xhr["Error"]);
+                $("#divResult").html(xhr["Response"] + ": " + xhr["Error"]);
             }
         });
     });
-
 });
