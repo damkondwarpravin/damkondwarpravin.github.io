@@ -83,4 +83,15 @@ $(document).ready(function () {
             }
         });
     });
+    //Reset by ID
+    $("#btnResetByID").click(function () {
+        $("#idtxt").val("");
+        $("#divResult").empty();
+    });
+    //Reset by Title
+    $("#btnResetByTitle").click(function () {
+        $("#titletxt").val("");
+        $("#yeartxt").val("");
+        $("#divResult").empty();
+    });
 });
